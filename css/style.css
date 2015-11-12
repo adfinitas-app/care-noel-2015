@@ -150,8 +150,9 @@ a{
 	background-color:inherit;
 }
 .jedonne2 {
-	background:url('../images/bga2.gif') no-repeat center;
-	padding: 17px 60px;
+	background:url('../images/bga2.png') no-repeat center;
+	padding: 32px 60px;
+
 }
 .row2 {
 	background:url('../images/bgrow2_02.png') no-repeat center;
@@ -164,8 +165,8 @@ a{
 	margin: 0 auto;
 }
 .leftd {
-	margin-top: 197px;
-	max-width: 385px;
+	margin-top: 150px;
+    max-width: 400px;
 	padding: 0;
 }
 .leftd h2 {
@@ -185,6 +186,7 @@ a{
 	font-size: 16px;
 	text-align: justify;
 	line-height: inherit;
+	margin-bottom: 12px;
 }
 .rightd{
 	background:url('../images/bgprow2_03.png') no-repeat center;
@@ -256,6 +258,7 @@ a{
 	margin:15px;
 	color: #2c1313;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 .row3 .right ul li{
 	height:152px;
@@ -297,21 +300,29 @@ a{
 .pricing-table{
 	color:#2d1313;
 	border: 0;
+	max-width: 260px;
+	background: #ffffff;
+	padding: 10px;
+	text-align: center;
+	height: 280px;
 }
 .pricing-table li{
 	max-width: 260px;
 }
-.pricing-table .cta-button {
+.pricing-table .jdn {
 	padding: 0;
 }
-.pricing-table .price{
+.pricing-table .prix{
+	font-weight: bold;
 	font-size:70px;
 }
-.pricing-table .description {
-	border:0;
+.pricing-table .desc {
+	height: 102px;
 }
 .pricing-table p {
 	font-size: 16px;
+	margin-bottom: 0;
+	font-weight: 600;
 }
 .pricing-table span {
 	font-size: 13px;
@@ -327,6 +338,10 @@ a{
 	max-width: 890px;
 	margin: 0 auto;
 }
+.div925{
+	max-width: 980px;
+	margin: 0 auto;
+}
 /*****footer******/
 .footer{
 	height: 397px;
@@ -334,14 +349,36 @@ a{
 }
 .footer ul{
 	margin-top:29px;
+	float: left;
 }
 .footer ul li{
 	float: left;
 	color: #ffffff;
+	font-size: 14px;
+	margin-right: 18px;
+}
+.footer ul li:last-child{
+	margin-right:0;
+}
+.footer ul li span{
+	color: #707070;
 }
 .footer a{
 	color: #ffc800;
 	text-decoration: underline;
+}
+.txtfooter {
+	color:#656565;
+	text-align:center;
+	font-size:12px;
+	margin-top:18px;
+}
+.logo1footer{
+	background:url('../images/logofooter_12.png') no-repeat center;
+	width: 45px;
+	height: 45px;
+	display: block;
+	margin-top: 12px;
 }
 /*****footer******/
 .right .no-bullet {
@@ -360,12 +397,17 @@ a{
     bottom: 0;
     text-transform: uppercase;
     padding-top:6px;
-    padding-left:16px;
+    padding-right: 38px;
+    text-align: center;
 }
 
-@media only screen and (min-width: 768px) and (max-width:1024px) {
-
-
+@media only screen and (min-width:480px) and (max-width:1024px) {
+.row3 .right {
+    margin-right:10%;
+}
+.cop2 {
+    margin-right: 5%;
+}
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 .top-bar-section ul {
@@ -379,6 +421,12 @@ a{
     height: 7rem;
 }
 .row3 .right {
-    margin-right:inherit;
+    margin-right:0;
+}
+.cop2 {
+    margin-right: 5%;
+}
+.row3 .right{
+	margin-top:0;
 }
 }
