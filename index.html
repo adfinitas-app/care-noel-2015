@@ -110,11 +110,19 @@
 <div class="clear"></div>
 	<ul class="no-bullet">
 	  <li>
-    <a href="#0" class="open tab-link opentext" data-tab="tab-1">santé</a></li>
-	  <li >
-    <a href="#0" class="open tab-link" data-tab="tab-2">alimentation</a></li>
+    <a href="#0" class="open tab-link opentext" data-tab="tab-1">santé</a>
+    <img src="images/cache_16.png" class="cache">
+    </li>
+	 
+    <li >
+    <a href="#0" class="open tab-link" data-tab="tab-2">alimentation</a>
+    <img src="images/cache_16.png">
+
+    </li>
 	  <li>
-    <a href="#0" class="open tab-link" data-tab="tab-3">éducation</a></li>
+    <a href="#0" class="open tab-link" data-tab="tab-3">éducation</a>
+    <img src="images/cache_16.png">
+    </li>
 	</ul>	
   <div id="tab-1" class="tab-content current medium-6 small-12">
 <h2>Santé, eau & assainissement</h2> 
@@ -231,6 +239,10 @@ $(document).ready(function(){
     var tab_id = $(this).attr('data-tab');
     $('ul.tabs li,.tab-content').removeClass('current');
     $('.right .no-bullet li a,.right .no-bullet li').removeClass('opentext'); 
+    $(this).addClass('opentext').parent().addClass('opentextli'); 
+    $('.right .no-bullet li').find('img').removeClass('cache'); 
+    $(this).parent().find('img').addClass('cache'); 
+
     $(this).addClass('opentext').parent().addClass('opentextli'); 
     $("#"+tab_id).addClass('current');
   });
