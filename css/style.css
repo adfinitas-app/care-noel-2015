@@ -157,7 +157,7 @@ a{
 .row2 {
 	background:url('../images/bgrow2_02.png') no-repeat center;
 	height: 686px;
-	margin-top: -197px;
+	margin-top: -213px;
     position: relative;
 }
 .cntrow2{
@@ -171,13 +171,13 @@ a{
 }
 .leftd h2 {
 	color:#f89f1f;
-	font-size: 40px;
+	font-size: 30px;
 	text-transform: uppercase;
 	margin: 0;
 }
 .leftd h3 {
 	color:#f1eeea;
-	font-size: 40px;
+	font-size: 25px;
 	text-transform: uppercase;
 	margin: 0 0 20px;
 }
@@ -199,7 +199,6 @@ a{
 	margin-top:110px;
 }
 .rightd ul li{
-	height: 132px;
 	font-size: 16px;
 	color: #f89f1f;
 	border-bottom: 1px solid #311e0a;
@@ -249,16 +248,17 @@ a{
 }
 .row3 .right{
 	height:567px;
-	width: 310px;
-	background: #ffffff;
+	width: 700px;
+	background: #f1eeea;
 	margin-right: 320px;
 	margin-top: 68px;
 }
 .row3 .right h3{
-	margin:15px;
+	margin: 15px 39px 15px 0;
 	color: #2c1313;
 	text-transform: uppercase;
 	font-weight: bold;
+	float: right;
 }
 .row3 .right ul li{
 	height:152px;
@@ -311,6 +311,7 @@ a{
 }
 .pricing-table .jdn {
 	padding: 0;
+	margin-top: 8px;
 }
 .pricing-table .prix{
 	font-weight: bold;
@@ -321,30 +322,32 @@ a{
 }
 .pricing-table p {
 	font-size: 16px;
-	margin-bottom: 0;
+	margin-bottom: 7px;
 	font-weight: 600;
 }
 .pricing-table span {
 	font-size: 13px;
 }
 .jedonne3{
-	background:url('../images/bgarow4.png') no-repeat center;
-	text-align: center;
-	font-size:15px;
-	color: #f1eeea;
-	margin-top: 46px;
+	background: url("../images/bgarow4.png") no-repeat  center;
+    color: #f1eeea;
+    font-size: 15px;
+    margin: 20px auto 44px;
+    padding: 15px;
+    text-align: center;
+    width: 260px;
 }
 .div890{
 	max-width: 890px;
 	margin: 0 auto;
 }
 .div925{
-	max-width: 980px;
+	max-width: 998px;
 	margin: 0 auto;
 }
 /*****footer******/
 .footer{
-	height: 397px;
+	/*height: 397px;*/
 	background:#2d1313;
 }
 .footer ul{
@@ -371,7 +374,7 @@ a{
 	color:#656565;
 	text-align:center;
 	font-size:12px;
-	margin-top:18px;
+	margin-top:8px;
 }
 .logo1footer{
 	background:url('../images/logofooter_12.png') no-repeat center;
@@ -379,10 +382,12 @@ a{
 	height: 45px;
 	display: block;
 	margin-top: 12px;
+	float: right;
 }
 /*****footer******/
 .right .no-bullet {
-    margin-left: 13px;
+    margin-right: 12px;
+    float: right;
 }
 .right .no-bullet .open{
 	background:url('../images/bgopen_70.png') no-repeat center;
@@ -400,7 +405,54 @@ a{
     padding-right: 38px;
     text-align: center;
 }
+.txtfooter span{
+	font-size: 10px;
+}
+.txtfooter .p1{
+	font-size: 12px;
+}
+.adfinitas {
+	margin-top: 10px;
+}
+.opentext{
+	background:url('../images/opentext_03.png') no-repeat center !important;
+	width: 197px !important;
+	left: -20px !important;
+	z-index: 10;
+}
+.opentextli {
+	/*width: 326px !important;*/
+}
 
+.tab-content{
+	display: none;
+	padding: 15px;
+	margin-top: -80px;
+	color:#2c1313;
+	font-family: 'Open Sans';
+
+}
+.tab-content.current{
+	display: inherit;
+}
+.tab-content h2{
+	font-size: 25px;
+	font-weight: bold;
+    text-transform: uppercase;
+}
+.tab-content h3{
+	font-size: 16px;
+	font-weight: 600;
+}
+.tab-content p.cit{
+	font-size: 16px;
+	font-style:italic;
+	line-height: 20px;
+	padding:0 27px;
+}
+.tab-content p{
+	font-size: 13px;
+}
 @media only screen and (min-width:480px) and (max-width:1024px) {
 .row3 .right {
     margin-right:10%;
@@ -428,5 +480,16 @@ a{
 }
 .row3 .right{
 	margin-top:0;
+}
+.logo1footer {
+    float: none;
+    margin: 20px auto;
+    clear: both;
+}
+.footer ul {
+    float: none;
+    margin: 5% auto;
+    width: 85%;
+    overflow: hidden;
 }
 }
