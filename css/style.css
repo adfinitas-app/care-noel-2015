@@ -496,14 +496,14 @@ ol.orbit-bullets {
   font-weight: 600;
 }
 .tab-content p.cit{
-  font-size: 16px;
+  font-size: 18px;
   font-style:italic;
   line-height: 20px;
   padding:0 27px;
   font-weight: normal;
 }
 .tab-content p{
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   margin-top: 38px;
 }
@@ -512,7 +512,7 @@ ol.orbit-bullets {
 }
 .row2-separateur img {
   position: absolute;
-  bottom: -140px;
+  bottom: -250px;
 }
 @media only screen and (min-width : 1025px) {
 }
