@@ -17,14 +17,14 @@
   <body>
 
     <div class="row menu-parent">
-      <nav class="large-12 columns menu">
+      <nav class="menu">
 	<ul class="menu-logo">
 	  <li>
 	    <a class="logo" href="http://www.carefrance.org/"><img src="/images/logo.png"></a>
 	  </li>
 	  <li class="menu-canvas"><a id="menu-canvas" href="#"><span>Menu</span></a></li>
 	</ul>
-	<section class="menu-content" id="menu-content" style="display: block;">
+	<section class="menu-content" id="menu-content">
 	  <ul class="menu-list">
 	    <li><a href="#aidez-les">aidez-les aujourd’hui</a></li>
 	    <li><a href="#les-enfants">Les enfants en zones de conflit</a></li>
@@ -37,13 +37,10 @@
     <script>
 document.getElementById("menu-canvas").addEventListener("click", function() {
   var displayBloc = document.getElementById("menu-content").style.display;
-  console.log(displayBloc);
-  if (displayBloc != "block" || displayBloc == "") {
-    console.log("here");
-    document.getElementById("menu-content").style.display = "block";
+  if (displayBloc == "none" or typeof(displayBloc) == "undefined") {
+    displayBloc = "display";
   } else {
-    console.log("or here");
-    document.getElementById("menu-content").style.display = "none";
+    displayBloc = "none";
   }
 });
     </script>
