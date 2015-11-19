@@ -33,8 +33,9 @@ a{
   font-weight: bold;
 } 
 .top-bar-sectionc ul li,.top-bar-sectionc li:not(.has-form) a:not(.button) {
-  background:#f1eeea;
+  background:#f1eeea !important;
   padding: inherit;
+  color: black !important;
 }
 .top-barc {
   background:#f1eeea;
