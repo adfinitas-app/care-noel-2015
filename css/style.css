@@ -569,9 +569,12 @@ ol.orbit-bullets {
 .cache{
   opacity: 0.4;
 }
+.row .row2-separateur {
+  margin: 0;
+}
 .row2-separateur img {
   position: absolute;
-  bottom: -250px;
+  bottom: -233px;
 }
 @media only screen and (min-width : 1025px) {
 }
