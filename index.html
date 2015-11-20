@@ -17,19 +17,24 @@
   <body>
 
     <div class="row menu-parent">
-      <nav class="large-12 columns menu">
+      <nav class="large-12 columns menu nav">
 	<ul class="menu-logo">
 	  <li>
 	    <a class="logo" href="http://www.carefrance.org/"><img src="/images/logo.png"></a>
 	  </li>
-	  <li class="menu-canvas"><a id="menu-canvas" href="#"><span>Menu</span></a></li>
 	</ul>
 	<section class="menu-content" id="menu-content" style="display: block;">
 	  <ul class="menu-list">
 	    <li><a href="#aidez-les">aidez-les aujourd’hui</a></li>
 	    <li><a href="#les-enfants">Les enfants en zones de conflit</a></li>
 	    <li><a href="#comment-agir">COMMENT AGIR</a></li>    
-	    <li><a target="_blank" href="https://donner.carefrance.org/b?cid=104" class="a button jedonne">je donne</a></li>
+	    <li><div class="parallelogram-div">
+		<a class="my-btn" target=_blank" href="https://donner.carefrance.org/b?cid=104">
+		  <div class="parallelogram-2">
+		    <div class="parallelogram-2-texte">Je donne</div>
+		  </div>
+		</a>
+	      </div></li>
 	  </ul>
 	</section>
       </nav>
@@ -45,6 +50,26 @@ document.getElementById("menu-canvas").addEventListener("click", function() {
     console.log("or here");
     document.getElementById("menu-content").style.display = "none";
   }
+});
+    </script>
+    <script>
+$(document).ready(function() {
+  var stickyNavTop = $('.nav').offset().top;
+
+  var stickyNav = function(){
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > stickyNavTop) { 
+      $('.nav').addClass('sticky');
+    } else {
+      $('.nav').removeClass('sticky'); 
+    }
+  };
+
+  stickyNav();
+
+  $(window).scroll(function() {
+    stickyNav();
+  });
 });
     </script>
     <div class="row rowd" id="aidez-les">
@@ -275,13 +300,6 @@ $(document).foundation({
     bullets: true, // Does the slider have bullets visible?
     circular: true, // Does the slider should go to the first slide after showing the last?
     timer: false, // Does the slider have a timer active? Setting to false disables the timer.
-  }
-});
-$("nav.top-bar").on("click", function() {
-  if ($("section.top-bar-section").css("display") == "block") {
-    $("section.top-bar-section").addClass("hide-for-small-only");
-  } else {
-    $("section.top-bar-section").removeClass("hide-for-small-only");
   }
 });
     </script>
