@@ -383,18 +383,20 @@ ol.orbit-bullets {
   margin-top: 22px;
   margin-bottom: 55px;
 }
-.div890 .columns:nth-child(1) .pricing-table .jdn {
-  margin-top:29px;
-}
-.div890 .columns:nth-child(2) .pricing-table .jdn {
-  margin-top:29px;
-}
 .pricing-table{
   color:#2d1313;
   border: 0;
   background: #ffffff;
   padding: 10px;
   text-align: center;
+}
+.pricing-table .desc {
+  height: 175px;
+}
+@media only screen and (max-width: 40em) {
+  .pricing-table .desc {
+    height: auto;
+  }
 }
 .pricing-table li{
   max-width: 260px;
