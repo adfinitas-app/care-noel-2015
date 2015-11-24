@@ -87,13 +87,15 @@ a{
 .menu {
   background-color: #F1EEEA;
 }
-.sticky {
-  position: fixed;
-  max-width: 1400px;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-  border-top: 0;
+@media only screen and (min-width: 40em) {
+  .sticky {
+    position: fixed;
+    max-width: 1400px;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
 }
 ul.menu-list {
   margin: 0;
