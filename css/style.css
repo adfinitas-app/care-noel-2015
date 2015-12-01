@@ -17,6 +17,9 @@ a{
 .clear{
   clear: both;
 }
+.menu a.logo img {
+  margin-bottom: 10px;
+}
 .parallelogram-2 {
   width: 200px;
   height: 45px;
@@ -330,17 +333,23 @@ ol.orbit-bullets {
   background:url('../images/bgrow3_05.jpg') no-repeat center;
   background-size: cover;
 }
+.row3 .transparent-background {
+  padding-top: 70px;
+  background-image: url("../images/transparence.png");
+  height: 260px;
+  padding-top: 20px;
+  margin-bottom: -70px;
+}
 .row3 .div1{
   color: #f9781c;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 70px;
 }
 .row3 .div2{
   color: #f9781c;
-  font-size: 40px;
+  font-size: 31px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
