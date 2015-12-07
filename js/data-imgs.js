@@ -71,10 +71,10 @@ var _DATA_IMGS = {
   },
 
   segments : {
-    'OPTIN':    {'arrondiSup':0, 'type': 'addition', 'values':[0,2,5], 'defisc':'IR', iraiser_params: {'cid':55, 'reserved_origine':'toto', 'code_campagne':'TK534'}} ,
-    'ADHERENT': {'arrondiSup':5, 'type': 'addition', 'values':[0,5,10], 'defisc':'IR', iraiser_params: {'cid':55, 'reserved_origine':'toto', 'code_campagne':'TK534'}} ,
-    'DONATEUR': {'arrondiSup':5, 'type': 'percent',  'values':[0,25,50], 'defisc':'IR', iraiser_params: {'cid':55, 'reserved_origine':'toto', 'code_campagne':'TK534'}} ,
-    'MIDDLE':   {'arrondiSup':5, 'type': 'addition', 'values':[0,25,100], 'defisc':'IR', iraiser_params: {'cid':55, 'reserved_origine':'toto', 'code_campagne':'TK534'}} ,
-    'GD':       {'arrondiSup':0, 'type': 'libre-preremplit', 'defisc':'ISF', iraiser_params: {'cid':55, 'reserved_origine':'toto', 'code_campagne':'TK534'}}
+    'PROSPECT':   {'arrondiSup':0, 'type': 'addition', 'values':[0,2,5]} ,
+    'DON_LOW':    {'arrondiSup':0, 'type': 'addition', 'values':[0,5,10]} ,
+    'DON_MIDDLE': {'arrondiSup':1, 'type': 'percent',  'values':[0,50,100]} ,
+    'DON_HIGH':   {'arrondiSup':1, 'type': 'percent', 'values':[0,50,100]} ,
+    'GD':         {'arrondiSup':0, 'type': 'libre'}
   }
 }
