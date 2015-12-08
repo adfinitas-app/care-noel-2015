@@ -25,7 +25,7 @@ var imgsGrid    =   {
             HTML = this.replaceAll(HTML, '{{ID}}', ID);
             HTML = this.replaceAll(HTML, '{{CLASS}}', CL);
             HTML = this.replaceAll(HTML, '{{DEDUCTION}}', Fisk);
-            HTML = this.replaceAll(HTML, 'data-src', 'src');
+//            HTML = this.replaceAll(HTML, 'data-src', 'src');
 
             jQ('#don-parent').append(HTML);
         }
