@@ -224,7 +224,7 @@ $(document).ready(function() {
 
 
 	<h2>Votre don leur servira toute leur vie</h2>
-	<div class="div890" data-equalizer>
+	<div id="eqwrapper" class="div890" data-equalizer>
 	  <div class="medium-4 small-12 columns">
 	    <div class="pricing-table" data-equalizer-watch>
 	      <p class="prix">70<sup>€</sup></p>
@@ -252,6 +252,18 @@ $(document).ready(function() {
 		<span>40€ après déduction fiscale</span>   
 	      </div>
 	      <p class="jdn"><a target="_blank" class="a button jedonne jedonne2" href="https://donner.carefrance.org/b?cid=104?cid=75&amount=16000">je donne</a></p>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="div890 adFclone" style="display:none;" data-equalizer>
+	  <div class="medium-4 small-12 columns adFwrapper {{CLASS}}" id="{{ID}}">
+	    <div class="pricing-table" data-equalizer-watch>
+	      <p class="prix">{{AMOUNT}}<sup>€</sup></p>
+	      <div class="desc">
+		<p>{{TEXT}}</p>
+		<span>{{DEDUCTION}}</span></div>
+	      <p class="jdn"><a target="_blank" class="a button jedonne jedonne2" href="{{LINK}}">je donne</a></p>
 	    </div>
 	  </div>
 	</div>
