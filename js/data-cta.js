@@ -7,7 +7,7 @@ var _DATA_CTA = {
   woopra_interaction : "cta_enfantsrefugies-dyngrid15",
 
   segments : {
-    'PROSPECT':   {'arrondiSup':0, 'type': 'addition', 'values':[0,2,5]} ,
+    'PROSPECT':   {'arrondiSup':0, 'type': 'fixe', 'values':[60,90,180]} ,
     'DON_LOW':    {'arrondiSup':0, 'type': 'addition', 'values':[0,5,10]} ,
     'DON_MIDDLE': {'arrondiSup':1, 'type': 'percent',  'values':[0,50,100]} ,
     'DON_HIGH':   {'arrondiSup':1, 'type': 'percent', 'values':[0,50,100]} ,
