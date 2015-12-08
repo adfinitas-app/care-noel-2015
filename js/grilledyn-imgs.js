@@ -29,7 +29,7 @@ var imgsGrid    =   {
 
             jQ('#don-parent').append(HTML);
         }
-        jQ('#don-parent .clone').remove();
+        jQ('#don-parent .adFclone').remove();
         jQ('#don-parent').css('display', 'block');
     },
 
